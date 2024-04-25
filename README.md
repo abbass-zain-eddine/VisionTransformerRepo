@@ -14,14 +14,14 @@ here is a discription on how to this model:
 		is to help the model to understand the position of each patch in the original image.
 		those embeddings can be leared, but we can instead use sines and cosines waves. 
 		In fact that is possible because, what positional vectors do is they add low frequency 
-		low frequency values to the tokens at the beginning of the image and high frequency values
+		 values to the tokens at the beginning of the image and high frequency values
 		for the tokens referring to the end of the image.(check Vaswani et. al. Attention is all
  		you need 2017).</li>
 <li>step3: In this step we are going to build the most important part of the model, i.e. the Encoder Block
 		the encoder block is composed of a normalization step the tokens of each image from the image batch
 		is normalized to have 0 mean and 1 std. the second step is to add the Multi-head Attention, and finally
 		have some residual connctions to be added. those residua connections will help the system to extend without
-		having the problem of vanishing gradient. thus for this step we are going to add a new class for the 
+		having the problem of vanishing gradient. thus for this step we are going two add a new class for the 
 		self attention. we build to classes one is a MultiHeadSelfAttention with loops and another implementation 
  		without loops. also we implement the Transformer Encoder block that is based on MHSA blocks. </li>
 <li>step4: This is the final step where we ill add the Multi Layer Perceptron responsible for classification
