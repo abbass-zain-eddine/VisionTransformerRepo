@@ -21,8 +21,8 @@ here is a discription on how to this model:
 		the encoder block is composed of a normalization step the tokens of each image from the image batch
 		is normalized to have 0 mean and 1 std. the second step is to add the Multi-head Attention, and finally
 		have some residual connctions to be added. those residua connections will help the system to extend without
-		having the problem of vanishing gradient. thus for this step we are going two add a new class for the 
-		self attention. we build to classes one is a MultiHeadSelfAttention with loops and another implementation 
+		having the problem of vanishing gradient. thus for this step we are going to add a new class for the 
+		self attention. we build two classes one is a MultiHeadSelfAttention with loops and another implementation 
  		without loops. also we implement the Transformer Encoder block that is based on MHSA blocks. </li>
 <li>step4: This is the final step where we ill add the Multi Layer Perceptron responsible for classification
 		this is done by extracting the first classification token (v_class) from the tokens list we have
