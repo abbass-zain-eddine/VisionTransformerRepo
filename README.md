@@ -10,7 +10,7 @@ here is a discription on how to this model:
 		n_patch into a vector and apply a linear transformation to any embedding length 
  		we want (512) for example, to generate tokens. Finally, we are going to concatinate
  		the v-class token (classification token) to the previous tokens.</li>
-<li>step2: second step is to app the positional encoding. The role of this vector 
+<li>step2: second step is to add the positional encoding. The role of this vector 
 		is to help the model to understand the position of each patch in the original image.
 		those embeddings can be leared, but we can instead use sines and cosines waves. 
 		In fact that is possible because, what positional vectors do is they add low frequency 
